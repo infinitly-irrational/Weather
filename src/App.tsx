@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Loading from "./app/Components/Loading";
+// import StyledSearchBar from "./app/Components/StyledSearchBar";
+// import Weather from "./app/Weather";
+// import SwitchToggle from "./app/Components/SwitchToggle";
+// import SearchHeader from "./app/Components/SearchHeader";
+import Weather from "./app/Weather";
+import WeatherCard from "./app/WeatherCard/WeatherCard";
+// import TodaysWeather from "./app/TodaysWeather";
+// import CityNameWeather from "./app/Functions/CityNameWeather";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Weather />
+      {/* <Loading /> */}
+      {/* <WeatherCard /> */}
+      {/* <TodaysWeather /> */}
+      {/* <CityNameWeather /> */}
     </div>
   );
 }

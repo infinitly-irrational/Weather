@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.center {
+  position: relative;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 10em 0 0 -14em;
+}
+.style8 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.style8 .dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 100%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  animation: anim8 2.2s linear forwards infinite;
+}
+
+.style8 .dot-1 {
+  animation-delay: 00ms;
+}
+
+.style8 .dot-2 {
+  animation-delay: 200ms;
+}
+
+.style8 .dot-3 {
+  animation-delay: 400ms;
+}
+
+.style8 .dot-6 {
+  animation-delay: 600ms;
+}
+
+.style8 .dot-9 {
+  animation-delay: 800ms;
+}
+
+.style8 .dot-8 {
+  animation-delay: 1000ms;
+}
+
+.style8 .dot-7 {
+  animation-delay: 1200ms;
+}
+
+.style8 .dot-4 {
+  animation-delay: 1400ms;
+}
+
+.style8 .dot-5 {
+  animation-delay: 1600ms;
+}
+
+@keyframes anim8 {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+    background-color: #fff;
+  }
+
+  15% {
+    transform: translateX(0-15x);
+  }
+
+  30% {
+    transform: translateX(15px);
+    background-color: #3a86ff;
+  }
+
+  45% {
+    transform: translateX(-15px);
+  }
+
+  60% {
+    transform: translateX(15px);
+    background-color: #ff5c8a;
+  }
+
+  95% {
+    transform: translateX(-15px);
+    background-color: orange;
+  }
+}
